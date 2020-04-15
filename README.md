@@ -8,4 +8,4 @@ common website project
 * background options based on 
 	* color picker
 	* image library
-	* on themes
+	* themes
