@@ -11,7 +11,5 @@ let column = {
     Add: function (postit) {
         this.postIt.push(postit);
     }
-    construct: function () {
-
-    }
+    
 };
