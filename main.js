@@ -24,10 +24,10 @@ window.onload = function () {
 
     for (var i = 0; i < 8; i++) {
         if (i % 2 == 1) {
-            columns.push(new column(i + 1 + ". páros column"));
+            columns.push(new column(i + 1 + ". p&aacute;ros column"));
         }
         else {
-            columns.push(new column(i + 1 + ". páratlan column"));
+            columns.push(new column(i + 1 + ". p&aacute;ratlan column"));
         }
     }
     for (var i = 0; i < columns.length; i++) {
