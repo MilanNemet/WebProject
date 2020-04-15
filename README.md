@@ -1,10 +1,11 @@
 # WebProject
 common website project
 
-backlog:
+**specs. backlog:**
 * list generation
 * list item generation
 * top navbar
-* background options based on color picker
-* background options based on image library
-* background options based on themes
+* background options based on 
+	* color picker
+	* image library
+	* on themes
