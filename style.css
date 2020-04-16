@@ -122,9 +122,12 @@ html.light {
 .light h3 {
     color: #6A7785;
 }
+.light h5 {
+    font-size: medium;
+    padding-top: 5px;
+}
 .light.card {
     background-color: #FEFFFF;
-    text-transform: uppercase;
     font-family: "Baloo Thambi 2", cursive;
     color: #6A7785;
     box-shadow: 1px 1px 3px #888888;
