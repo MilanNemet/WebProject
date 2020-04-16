@@ -7,7 +7,7 @@ let renderHtml = function () {
 
     for (var i = 0; i < columns.length; i++) {
         let divOuter = document.createElement("div");
-        divOuter.className = "column zebra medium";    //for testing: add your .className here (related to .column)
+        divOuter.className = "column medium";    //for testing: add your .className here (related to .column)
 
         let colTitle = document.createElement("h3");
         colTitle.innerHTML = columns[i].title;
