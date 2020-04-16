@@ -42,7 +42,7 @@ let renderHtml = function () {
 
         let buttonAddNewCard = document.createElement("button");
         buttonAddNewCard.innerHTML = "&uacute;j post-it";              /* for testing: text in the button, appearing on frontend */
-        buttonAddNewCard.className = "light";                        /* for testing: class(es) of this button */
+        buttonAddNewCard.className = "newCard";                        /* for testing: class(es) of this button */
 
         divOuter.appendChild(buttonAddNewCard);
 
