@@ -11,8 +11,9 @@ body {
     flex-wrap: nowrap;
 }
 .column {
+    min-width: 300px;
     width: 15em;
-    margin: 0.25em;
+    margin: 0.5em;
     border-radius: 5px;
     padding: 0.5em;
     height: max-content; /* CSS 4.0: "max-content" is not a valid value for the "height" property */
@@ -22,13 +23,12 @@ body {
 }
 
 .card {
-    margin: 0.25em 0px 0.25em 0px;
+    margin: 0.25em 0;
     padding: 0.5em;
     border-radius: 5px;
     max-height: 150px;
     overflow: auto;
 }
-
 .card h5 {
     margin : 0px 0px 0.5em 0px;
 }
@@ -53,8 +53,27 @@ body {
 }
 
 /* dark theme */
+html.dark {
+    background-color: #2A293E;
+    background-image: linear-gradient(to bottom left, #19182D, #342037, #11294D);
+    background-attachment: fixed;
+}
 .dark {
-
+    color: white;
+}
+.dark h3 {
+    color: #786481;
+}
+.dark h5 {
+    color: palegoldenrod;
+}
+.column.dark {
+    box-shadow: 0 0 3px 3px #786481;
+    background-color: rgba(0,0,0,0); /*transparent*/
+}
+.card.dark {
+    margin-bottom: 15px;
+    box-shadow: 0 0 2px 2px palegoldenrod;
 }
 
 /* light theme */
