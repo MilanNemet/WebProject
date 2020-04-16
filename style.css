@@ -1,4 +1,4 @@
-/* András-Cili-Emőke co-operation  */ 
+﻿/* András-Cili-Emőke co-operation  */ 
 
 body {
     font-family: 'Noto Sans KR', sans-serif;
@@ -61,3 +61,31 @@ body {
 .light {
 
 }
+/* medium theme*/
+.mediumCard {
+    color:black;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Patrick Hand', cursive;
+    background: #fce9e9;
+}
+.mediumColumn {
+    background: #f8d3d3;
+    border: 2px solid #eb7c7a;
+}
+
+h3 {
+    font-family: 'Alice', serif;
+    font-size: 19px;
+    text-align: center;
+    font-weight: bolder;
+   }
+   
+h5 {
+    font-family: 'Alice', serif;
+    font-size: 17px;
+   }
+p {
+    font-size: 14px;
+   }
+   
