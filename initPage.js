@@ -1,16 +1,16 @@
 let renderHtml = function () {
     console.debug("Starting render HTML...");
 
-    document.querySelector("html").className = "light";     //for testing: add your .className here (related to the entire document)
+    document.querySelector("html").className = "medium";     //for testing: add your .className here (related to the entire document)
 
     let mainDiv = document.querySelector(".container");
-    mainDiv.className = "container light";
+    mainDiv.className = "container medium";
     let newDivCol = [];
     let newDivPost = [];
 
     for (var i = 0; i < columns.length; i++) {
         let divOuter = document.createElement("div");
-        divOuter.className = "column light";    //for testing: add your .className here (related to .column)
+        divOuter.className = "column medium";    //for testing: add your .className here (related to .column)
 
         let colTitle = document.createElement("h3");
         colTitle.innerHTML = columns[i].title.toUpperCase();
@@ -19,7 +19,7 @@ let renderHtml = function () {
 
         for (var j = 0; j < columns[i].postIts.length; j++) {
             let divInner = document.createElement("div");
-            divInner.className = "card light";    //for testing: add your .className here (related to .card)
+            divInner.className = "card medium";    //for testing: add your .className here (related to .card)
 
             let cardTitle = document.createElement("h5");
             let cardContent = document.createElement("p");
@@ -42,7 +42,7 @@ let renderHtml = function () {
 
         let buttonAddNewCard = document.createElement("button");
         buttonAddNewCard.innerHTML = "&uacute;j post-it";              /* for testing: text in the button, appearing on frontend */
-        buttonAddNewCard.className = "newCard";                        /* for testing: class(es) of this button */
+        buttonAddNewCard.className = "newCard medium";                        /* for testing: class(es) of this button */
 
         divOuter.appendChild(buttonAddNewCard);
 
