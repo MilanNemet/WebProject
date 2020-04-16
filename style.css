@@ -62,15 +62,15 @@ body {
 
 }
 /* medium theme*/
-.medium card {
+
+.medium .card {
     color:black;
     text-align: center;
-    border-radius: 5px;
     font-family: 'Patrick Hand', cursive;
-    background: #fce9e9;
+    background-color: #fce9e9;
 }
 
-.medium column {
+.medium.column {
     background: #f8d3d3;
     border: 2px solid #eb7c7a;
 }
