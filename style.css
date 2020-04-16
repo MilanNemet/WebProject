@@ -106,6 +106,20 @@ html.dark {
 .medium p {
     font-size: 14px;
    }
+html.medium {
+    background-image: url("resources/IMG_20190406_135412.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+ }
+ 
+ .medium.newCard {
+     color: black;
+     font-weight: bold;
+     font-family: 'Alice', serif;
+ }
+ .medium.newCard:hover {
+     background-color: #eb7c7a;
+ }
 
 /* light theme */
 
@@ -118,7 +132,7 @@ html.light {
     box-shadow: 1px 1px 3px #888888;
     cursor: pointer;
 }
-   
+  
 .light h3 {
     color: #6A7785;
 }
