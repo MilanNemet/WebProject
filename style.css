@@ -78,14 +78,6 @@ html.dark {
     box-shadow: 0 0 2px 2px palegoldenrod;
 }
 
-/* light theme */
-html.light {
-    background-color: #FAFAFA;
-}
-
-.light {
-
-}
 /* medium theme*/
 
 .medium .card {
@@ -114,6 +106,18 @@ html.light {
 .medium p {
     font-size: 14px;
    }
+
+/* light theme */
+
+html.light {
+    background-color: #FAFAFA;
+}
+
+.light.column {
+    background-color: #D7E7ED;
+    box-shadow: 1px 1px 3px #888888;
+    cursor: pointer;
+}
    
 .light h3 {
     color: #6A7785;
@@ -123,6 +127,7 @@ html.light {
     text-transform: uppercase;
     font-family: "Baloo Thambi 2", cursive;
     color: #6A7785;
+    box-shadow: 1px 1px 3px #888888;
 }
 
 /* Navbar */
