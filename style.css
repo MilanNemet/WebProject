@@ -193,4 +193,15 @@ html.light {
   .dropdown:hover .dropdown-content {
     display: block;
   }
-  
+ /* Button */
+
+ .newCard  {
+    background: none;
+    color: white;
+    min-width: 300px;
+    width: 15em;
+    margin: auto;
+    border-radius: 5px;
+    padding: 0.5em;
+    
+  }
