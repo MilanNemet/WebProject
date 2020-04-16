@@ -107,9 +107,9 @@ html.dark {
     font-size: 14px;
    }
 html.medium {
-    background-image: url("resources/IMG_20190406_135412.jpg");
-    background-size: cover;
-    background-attachment: fixed;
+   background-image: url("resources/IMG-20190406-WA0035.jpg");
+   background-size: cover;
+   background-attachment: fixed;
  }
  
  .medium.newCard {
@@ -120,6 +120,7 @@ html.medium {
  .medium.newCard:hover {
      background-color: #eb7c7a;
  }
+   
 
 /* light theme */
 
