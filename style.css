@@ -62,30 +62,31 @@ body {
 
 }
 /* medium theme*/
-.mediumCard {
+.medium card {
     color:black;
     text-align: center;
     border-radius: 5px;
     font-family: 'Patrick Hand', cursive;
     background: #fce9e9;
 }
-.mediumColumn {
+
+.medium column {
     background: #f8d3d3;
     border: 2px solid #eb7c7a;
 }
 
-h3 {
+.medium h3 {
     font-family: 'Alice', serif;
     font-size: 19px;
     text-align: center;
     font-weight: bolder;
    }
    
-h5 {
+.medium h5 {
     font-family: 'Alice', serif;
     font-size: 17px;
    }
-p {
+.medium p {
     font-size: 14px;
    }
    
