@@ -77,6 +77,10 @@ html.dark {
 }
 
 /* light theme */
+html {
+    background-color: #FAFAFA;
+}
+
 .light {
 
 }
@@ -109,3 +113,14 @@ html.dark {
     font-size: 14px;
    }
    
+    background-color: #D7E7ED;
+}
+.light h3 {
+    color: #6A7785;
+}
+.light.card {
+    background-color: #FEFFFF;
+    text-transform: uppercase;
+    font-family: "Baloo Thambi 2", cursive;
+    color: #6A7785;
+}
