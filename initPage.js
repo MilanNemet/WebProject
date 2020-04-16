@@ -7,7 +7,7 @@ let renderHtml = function () {
 
     for (var i = 0; i < columns.length; i++) {
         let divOuter = document.createElement("div");
-        divOuter.className = "column zebra";    //for testing: add your .className here (related to .column)
+        divOuter.className = "column zebra mediumColumn";    //for testing: add your .className here (related to .column)
 
         let colTitle = document.createElement("h3");
         colTitle.innerHTML = columns[i].title;
@@ -16,7 +16,7 @@ let renderHtml = function () {
 
         for (var j = 0; j < columns[i].postIts.length; j++) {
             let divInner = document.createElement("div");
-            divInner.className = "card";    //for testing: add your .className here (related to .card)
+            divInner.className = "card mediumCard";    //for testing: add your .className here (related to .card)
 
             let cardTitle = document.createElement("h5");
             let cardContent = document.createElement("p");
