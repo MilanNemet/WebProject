@@ -1,10 +1,10 @@
 let renderHtml = function () {
     console.debug("Starting render HTML...");
 
-    document.querySelector("html").className = "dark";     //for testing: add your .className here (related to the entire document)
+    document.querySelector("html").className = "light";     //for testing: add your .className here (related to the entire document)
 
     let mainDiv = document.querySelector(".container");
-    mainDiv.className = "container dark";
+    mainDiv.className = "container light";
     let newDivCol = [];
     let newDivPost = [];
 
@@ -23,7 +23,11 @@ let renderHtml = function () {
 
             let cardTitle = document.createElement("h5");
             let cardContent = document.createElement("p");
+            cardContent.className = "content";  //Card content has class: "content"
+            cardContent.style.display = "none"; //Card content is not visible 
             let cardDescription = document.createElement("p");
+            cardDescription.className = "cardDescription";   //Card description has class: "cardDescription"
+            cardDescription.style.display = "none";         //Card description is not visible
 
             cardTitle.innerHTML = columns[i].postIts[j].title.toUpperCase();
             cardContent.innerHTML = columns[i].postIts[j].content;
@@ -39,3 +43,13 @@ let renderHtml = function () {
         mainDiv.appendChild(divOuter);
     }
 }
+let navbarClick = function () {
+    
+    console.log(navbar);
+}
+let navbar = document.getElementsByClassName("navbar");
+navbar.foreach(
+    item => {
+        item.addEventListener("click", console.log("clicked at navbar", item.innerHTML));
+    }
+)
