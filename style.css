@@ -77,7 +77,7 @@ html.dark {
 }
 
 /* light theme */
-html {
+html.light {
     background-color: #FAFAFA;
 }
 
