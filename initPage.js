@@ -23,7 +23,11 @@ let renderHtml = function () {
 
             let cardTitle = document.createElement("h5");
             let cardContent = document.createElement("p");
+            cardContent.className = "content";  //Card content has class: "content"
+            cardContent.style.display = "none"; //Card content is not visible 
             let cardDescription = document.createElement("p");
+            cardDescription.className = "cardDescription";   //Card description has class: "cardDescription"
+            cardDescription.style.display = "none";         //Card description is not visible
 
             cardTitle.innerHTML = columns[i].postIts[j].title.toUpperCase();
             cardContent.innerHTML = columns[i].postIts[j].content;
