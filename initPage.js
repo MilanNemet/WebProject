@@ -43,3 +43,13 @@ let renderHtml = function () {
         mainDiv.appendChild(divOuter);
     }
 }
+let navbarClick = function () {
+    
+    console.log(navbar);
+}
+let navbar = document.getElementsByClassName("navbar");
+navbar.foreach(
+    item => {
+        item.addEventListener("click", console.log("clicked at navbar", item.innerHTML));
+    }
+)
