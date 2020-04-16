@@ -5,16 +5,17 @@ body {
 }
 /* Size settings */
 .container {
-    /* width: 90em; */
+    width: 100%;
     display : flex;
     flex-direction: row;
+    flex-wrap: nowrap;
 }
 .column {
-    width : 15em;
+    width: 15em;
     margin: 0.25em;
     border-radius: 5px;
     padding: 0.5em;
-    height: max-content;
+    height: max-content; /* CSS 4.0: "max-content" is not a valid value for the "height" property */
 }
 .column h3 {
     margin: 0 0 0.5em 0; 
@@ -23,7 +24,9 @@ body {
 .card {
     margin: 0.25em 0px 0.25em 0px;
     padding: 0.5em;
-    border-radius: 5px;    
+    border-radius: 5px;
+    max-height: 150px;
+    overflow: auto;
 }
 
 .card h5 {
@@ -31,19 +34,30 @@ body {
 }
 
 
-/* color settings */
+/*** color settings ***/
 
-.column {
+/* zebra theme */
+.zebra {
     background-color: teal;
 }
 
-.column h3 {
+.zebra h3 {
     color: white;
 }
-.card:nth-child(even) {
+.zebra .card:nth-child(even) {
     background-color: #f2f2f2;
 }
-.card:nth-child(odd) {
+.zebra .card:nth-child(odd) {
     background-color: rgb(22, 24, 24);
     color: rgb(184, 224, 214);
+}
+
+/* dark theme */
+.dark {
+
+}
+
+/* light theme */
+.light {
+
 }
