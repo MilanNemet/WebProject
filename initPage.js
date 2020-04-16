@@ -1,10 +1,10 @@
 let renderHtml = function () {
     console.debug("Starting render HTML...");
 
-    document.querySelector("html").className = "dark";     //for testing: add your .className here (related to the entire document)
+    document.querySelector("html").className = "light";     //for testing: add your .className here (related to the entire document)
 
     let mainDiv = document.querySelector(".container");
-    mainDiv.className = "container dark";
+    mainDiv.className = "container light";
     let newDivCol = [];
     let newDivPost = [];
 
