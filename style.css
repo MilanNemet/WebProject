@@ -192,6 +192,32 @@ html.light {
     color:#6A7785;
     border-radius: 5px;
   }
+.navbar.light {
+    background-color: #D7E7ED;
+    box-shadow: 1px 1px 3px #888888;
+    /* font-family: 'Alice', serif; */
+    font-size: 19px;
+    font-weight: bolder;
+
+}
+.navbar.light a {
+    color: #6A7785;
+    text-decoration: none;
+}
+
+.navbar.light .dropdown .dropbtn{
+    color: #6A7785;
+    font-size: 19px;
+    font-weight: bolder;
+}
+
+.navbar.light a:hover, .navbar.light .dropdown:hover .dropbtn {
+    background-color: rgb(79, 165, 196);
+    color: rgb(224, 232, 240);
+  }
+.navbar.light .dropdown .dropdown-content {
+    background-color: #D7E7ED;
+}
 
 /* Navbar */
 .navbar {
