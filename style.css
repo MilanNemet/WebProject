@@ -1,12 +1,23 @@
-﻿/* András-Cili-Emőke co-operation  */ 
-
-body {
+﻿body {
     font-family: 'Noto Sans KR', sans-serif;
+}
+popUp::after {
+    content: "";
+    background-color: black;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+auth {
+
 }
 /* Size settings */
 .container {
     width: 100%;
-    display : flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
 }
