@@ -1,27 +1,40 @@
 ﻿body {
-    position: relative;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "Baloo Thambi 2", cursive;
 }
-popUp {
-    width: 10vw;
-    height: 10vh;
-    position: absolute;
-    z-index: 11;
+.popUp {
+    
 }
-popUp::after {
+.popUp::after {
     content: "";
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.7;
     top: 0;
     left: 0;
-    bottom: 0;
-    right: 0;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     z-index: 10;
 }
-auth {
-
+.auth {
+    top: 10%;
+    left: 30%;
+    right: 30%;
+    position: absolute;
+    background-color: white;
+    z-index: 20;
+    padding: 50px;
+    border-radius: 25px;
 }
+.auth > div {
+    max-width: 400px;
+    margin: auto;
+}
+label {
+    font-weight: bold;
+    display: inline-block;
+    min-width: 150px;
+}
+
 /* Size settings */
 .container {
     width: 100%;
