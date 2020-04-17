@@ -10,7 +10,6 @@ let user = function (name, pwd) {
     }
 }
 
-
 const user1 = new user("B\u00E9la", "qwe123");
 const user2 = new user("Gizi", "1234");
 const user3 = new user("Asexual", "000");
@@ -31,8 +30,21 @@ let doAuth = function () {
     if (isAuth) {
         let popUp = document.querySelector(".popUp");
         popUp.style.display = "none";
-        popUp.style.zIndex = "-10";
         loadStart();
         renderHtml();
+    }
+    else {
+        data[0].style.backgroundColor = "#F00";
+        data[1].style.backgroundColor = "#F00";
+
+        setTimeout(
+            function () {
+                document.querySelectorAll(".auth input")[0].style.backgroundColor[2]++;
+                document.querySelectorAll(".auth input")[0].style.backgroundColor[3]++;
+                document.querySelectorAll(".auth input")[1].style.backgroundColor[2]++;
+                document.querySelectorAll(".auth input")[1].style.backgroundColor[3]++;
+            },
+            10
+        );
     }
 }
