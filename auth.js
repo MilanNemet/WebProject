@@ -15,3 +15,9 @@ const user2 = new user("Gizi", "1234");
 const user3 = new user("Asexual", "000");
 
 let users = [user1, user2, user3];
+
+let getUserData = function () {
+    let data = document.querySelector(".popUp > .auth > div > input");
+    let name = data[0];
+    let pass = data[1];
+}

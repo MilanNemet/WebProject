@@ -20,7 +20,8 @@ let columns = [];
 
 window.onload = function () {
     console.debug("Window loaded...");
-    
+
+    getUserData();
     loadStart();
     renderHtml();
 }
