@@ -21,5 +21,5 @@ let columns = [];
 window.onload = function () {
     console.debug("Window loaded...");
 
-    document.querySelector(".popUp > .auth > div > div > button").addEventListener("click", doAuth);
+    document.querySelector(".auth button").addEventListener("click", doAuth);
 }
