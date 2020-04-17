@@ -3,12 +3,10 @@
     font-family: 'Noto Sans KR', sans-serif;
 }
 popUp {
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    width: 10vw;
+    height: 10vh;
     position: absolute;
-    z-index: 10;
+    z-index: 11;
 }
 popUp::after {
     content: "";
