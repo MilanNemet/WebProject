@@ -10,14 +10,26 @@ let user = function (name, pwd) {
     }
 }
 
-const user1 = new user("Béla", "123");
+const user1 = new user("Béla", "qwe123");
 const user2 = new user("Gizi", "1234");
 const user3 = new user("Asexual", "000");
 
 let users = [user1, user2, user3];
 
-let getUserData = function () {
-    let data = document.querySelector(".popUp > .auth > div > input");
-    let name = data[0];
-    let pass = data[1];
+let doAuth = function () {
+    let data = document.querySelectorAll(".popUp > .auth > div > div > input");
+    let inputName = data[0];
+    let inputPass = data[1];
+    let auth = false;
+
+    for (var i = 0; i < users.length && !auth; i++) {
+        if (users[i].userName === inputName && users[i].passWord === inputPass) {
+            auth = true;
+        }
+    }
+    if (auth) {
+        document.querySelector(".popUp").style.display = "none";
+        loadStart();
+        renderHtml();
+    }
 }
