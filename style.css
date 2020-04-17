@@ -1,5 +1,14 @@
 ﻿body {
+    position: relative;
     font-family: 'Noto Sans KR', sans-serif;
+}
+popUp {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 10;
 }
 popUp::after {
     content: "";
@@ -10,6 +19,7 @@ popUp::after {
     bottom: 0;
     right: 0;
     position: absolute;
+    z-index: 10;
 }
 auth {
 
