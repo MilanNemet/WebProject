@@ -11,7 +11,7 @@ let user = function (name, pwd) {
 }
 
 
-const user1 = new user("Béla", "qwe123");
+const user1 = new user("B\u00E9la", "qwe123");
 const user2 = new user("Gizi", "1234");
 const user3 = new user("Asexual", "000");
 
