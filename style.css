@@ -154,8 +154,8 @@ html.light {
     min-width: 300px;
     width: 15em;
     border: none;
-    padding: 0.5em;
-    margin: 0.25em 0;
+    padding: 0.9em;
+    margin: 0.27em 0 0 0;
   }
 .newCard.light:hover  {
     background-color: #ACB9BE;
