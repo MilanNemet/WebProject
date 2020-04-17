@@ -77,6 +77,9 @@ html.dark {
     margin-bottom: 15px;
     box-shadow: 0 0 2px 2px palegoldenrod;
 }
+.navbar.dark {
+    box-shadow: 0 0 3px 3px #786481;
+}
 
 /* medium theme*/
 
@@ -166,8 +169,15 @@ html.light {
 /* Navbar */
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #none;    
+    border-radius: 5px;
+    margin: 0.5em;    
+    /* position: fixed;
+    top: 0; */
+    width: 98vw;
   }
+
+
   
   .navbar a {
     float: left;
