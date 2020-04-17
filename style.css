@@ -127,13 +127,11 @@ html.medium {
 html.light {
     background-color: #FAFAFA;
 }
-
 .light.column {
     background-color: #D7E7ED;
     box-shadow: 1px 1px 3px #888888;
     cursor: pointer;
-}
-  
+} 
 .light h3 {
     color: #6A7785;
 }
@@ -147,6 +145,23 @@ html.light {
     color: #6A7785;
     box-shadow: 1px 1px 3px #888888;
 }
+.newCard.light  {
+    background: #D7E7ED;
+    text-decoration: none;
+    color: #6A7785;
+    font-family: "Baloo Thambi 2", cursive;
+    font-size: medium;
+    min-width: 300px;
+    width: 15em;
+    border: none;
+    padding: 0.5em;
+    margin: 0.25em 0;
+  }
+.newCard.light:hover  {
+    background-color: #ACB9BE;
+    color:#6A7785;
+    border-radius: 5px;
+  }
 
 /* Navbar */
 .navbar {
