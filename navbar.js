@@ -1,19 +1,23 @@
-// let navbarClick = function () {
-    
-//     console.log(navbar);
-// }
-// let navbar = document.getElementsByClassName("navbar");
-// navbar.foreach(
-//     item => {
-//         item.addEventListener("click", console.log("clicked at navbar", item.innerHTML));
-//     }
-// )
+let themeChange = (e) => {
+    let btn=e.target;
+    themeSelect = btn.innerHTML;
+}
+
+
+
+
+
 let navBar = document.getElementsByClassName("navbar");
 navBar[0].className= "navbar "+themeSelect;
-let dropdownElements = document.querySelectorAll("a[class=dropdown-element]");
+let dropdownElements = document.getElementsByClassName("outlook");
 console.log(dropdownElements);
-dropdownElements.forEach(
-    item => {
-        addEventListener("click", console.log("kattintás"));
+for (let i = 0; i < dropdownElements.length; i++) {
+    if (dropdownElements[i].className=="outlook themeSelect") {
+        dropdownElements[i].addEventListener("click", themeChange)
+    } else {
+        if (dropdownElements[i].className=="outlook backgroundPicSelect") {
+            dropdownElements[i].addEventListener("click", () => console.log ("kép katt"+dropdownElements[i].innerHTML))
+        }
     }
-);
+    
+}
