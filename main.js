@@ -20,7 +20,6 @@ let columns = [];
 
 window.onload = function () {
     console.debug("Window loaded...");
-    
-    loadStart();
-    renderHtml();
+
+    document.querySelector("#login").addEventListener("click", doAuth);
 }
