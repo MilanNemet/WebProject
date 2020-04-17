@@ -20,27 +20,7 @@ let columns = [];
 
 window.onload = function () {
     console.debug("Window loaded...");
-    let postit = new postIt();
-
-    for (var i = 0; i < 8; i++) {
-        if (i % 2 == 1) {
-            columns.push(new column(i + 1 + ". even column"));
-        }
-        else {
-            columns.push(new column(i + 1 + ". odd column"));
-        }
-    }
-    for (var i = 0; i < columns.length; i++) {
-        columns[i].Add(postit);
-        columns[i].Add(postit);
-        if (i % 2 == 0) {
-            columns[i].Add(postit);
-        }
-        if (i % 3 == 0) {
-            columns[i].Add(postit);
-            columns[i].Add(postit);
-        }
-    }
-
+    
+    loadStart();
     renderHtml();
 }
