@@ -11,7 +11,7 @@ let user = function (name, pwd) {
 }
 
 
-const user1 = new user("Bela", "qwe123");
+const user1 = new user("Béla", "qwe123");
 const user2 = new user("Gizi", "1234");
 const user3 = new user("Asexual", "000");
 
@@ -21,14 +21,14 @@ let doAuth = function () {
     let data = document.querySelectorAll(".auth input");
     let inputName = data[0].value;
     let inputPass = data[1].value;
-    let auth = false;
+    let isAuth = false;
 
-    for (var i = 0; i < users.length && !auth; i++) {
+    for (var i = 0; i < users.length && !isAuth; i++) {
         if (users[i].userName === inputName && users[i].passWord === inputPass) {
-            auth = true;
+            isAuth = true;
         }
     }
-    if (auth) {
+    if (isAuth) {
         let popUp = document.querySelector(".popUp");
         popUp.style.display = "none";
         popUp.style.zIndex = "-10";
