@@ -1,12 +1,12 @@
 $(document).ready(function(){
   
   $(".newCard").click(function(){
-    $(".newCard").slideUp();
-    $(".editor").slideDown();
+    $(this).slideUp();
+    $(this).parent().children(".editor").delay("slow").slideDown();
   });
 
   $(".closing-x").click(function(){
-    $(".newCard").slideDown();
+    $(".newCard").delay("slow").slideDown();
     $(".editor").slideUp();
   });
 });
