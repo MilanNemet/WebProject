@@ -37,25 +37,50 @@ let doAuth = function () {
         data[0].style.backgroundColor = "#F00";
         data[1].style.backgroundColor = "#F00";
 
-        animateBgnd();
+        animateBgnd(data[0], 5);
+        animateBgnd(data[1], 0, "lin", 1);
     }
 }
 
-let animateBgnd = function () {
-    let i1 = document.querySelectorAll(".auth input")[0];
-    let i2 = document.querySelectorAll(".auth input")[1];
+let animateBgnd = function (target, intervall=1, mode = null, modifier = null, pace=1) {
+    //let i1 = document.querySelectorAll(".auth input")[0];
+    //let i2 = document.querySelectorAll(".auth input")[1];
 
-    let red = 255;
-    let green = 0;//nok
-    let blue = 0;//nok
+    let str = target.style.backgroundColor;
+    let values = str.slice(4, str.length - 1);
+    let arr = values.split(", ");
 
-    green += 5;
-    blue += 5;
+    let red = parseInt(arr[0]);
+    let green = parseInt(arr[1]);
+    let blue = parseInt(arr[2]);
 
-    i1.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
-    i2.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
+    let time = intervall;
 
-    if (green < 255) {
-        setTimeout(animateBgnd, 10);
+    green += pace;
+    blue += pace;
+
+    switch (mode) {
+        case "lin":
+            time += modifier;
+            break;
+        case "exp":
+            time *= modifier;
+            break;
+        default:
+            break;
+    }
+    
+    target.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
+    //i1.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
+    //i2.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
+
+    if (green <= 255) {
+        setTimeout(
+            () => {
+                animateBgnd(target, time, mode, modifier);
+                console.info("T: " + time + " || r:" + red + ", g:" + green + ", b:" + blue);
+            },
+            time
+        );
     }
 }
