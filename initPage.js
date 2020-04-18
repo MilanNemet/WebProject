@@ -69,6 +69,25 @@ let renderHtml = function () {
 
         divOuter.appendChild(buttonAddNewCard);
 
+        let div = document.createElement("div");
+        div.id="editor";
+        /*div.style.display = "none";*/
+        let ComposerContent = document.createElement("input");
+        ComposerContent.className = "title";
+
+        let newCardComposer = document.createElement("button");
+        newCardComposer.className = "cardFooter";
+        newCardComposer.innerHTML = "Új kártya";
+
+        let ComposerClose = document.createElement("button");
+        ComposerClose.className = "closing-x";
+        ComposerClose.innerHTML = "X";
+
+        div.appendChild(ComposerContent);
+        div.appendChild(newCardComposer);
+        div.appendChild(ComposerClose);
+        divOuter.appendChild(div);
+
         mainDiv.appendChild(divOuter);
     }
 }
