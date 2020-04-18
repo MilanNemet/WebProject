@@ -37,14 +37,25 @@ let doAuth = function () {
         data[0].style.backgroundColor = "#F00";
         data[1].style.backgroundColor = "#F00";
 
-        setTimeout(
-            function () {
-                document.querySelectorAll(".auth input")[0].style.backgroundColor[2]++;
-                document.querySelectorAll(".auth input")[0].style.backgroundColor[3]++;
-                document.querySelectorAll(".auth input")[1].style.backgroundColor[2]++;
-                document.querySelectorAll(".auth input")[1].style.backgroundColor[3]++;
-            },
-            10
-        );
+        animateBgnd();
+    }
+}
+
+let animateBgnd = function () {
+    let i1 = document.querySelectorAll(".auth input")[0];
+    let i2 = document.querySelectorAll(".auth input")[1];
+
+    let red = 255;
+    let green = 0;//nok
+    let blue = 0;//nok
+
+    green += 5;
+    blue += 5;
+
+    i1.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
+    i2.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
+
+    if (green < 255) {
+        setTimeout(animateBgnd, 10);
     }
 }
