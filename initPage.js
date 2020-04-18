@@ -74,6 +74,7 @@ let renderHtml = function () {
         div.style.display = "none";
         let inputTitle = document.createElement("input");
         inputTitle.className = "title";
+        inputTitle.placeholder = "Adj címet ennek a kártyának...";
 
         let btnNewCard = document.createElement("button");
         btnNewCard.innerHTML = "Új kártya";
