@@ -69,6 +69,25 @@ let renderHtml = function () {
 
         divOuter.appendChild(buttonAddNewCard);
 
+        let divEditor = document.createElement("div");
+        divEditor.className ="editor";
+        divEditor.style.display = "none";
+        let inputTitle = document.createElement("input");
+        inputTitle.className = "title";
+        inputTitle.placeholder = "Adj címet ennek a kártyának...";
+
+        let btnNewCard = document.createElement("button");
+        btnNewCard.innerHTML = "Új kártya";
+
+        let btnClose = document.createElement("button");
+        btnClose.className = "closing-x";
+        btnClose.innerHTML = "X";
+
+        divEditor.appendChild(inputTitle);
+        divEditor.appendChild(btnNewCard);
+        divEditor.appendChild(btnClose);
+        divOuter.appendChild(divEditor);
+
         mainDiv.appendChild(divOuter);
     }
 }
