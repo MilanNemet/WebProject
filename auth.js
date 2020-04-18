@@ -43,8 +43,6 @@ let doAuth = function () {
 }
 
 let animateBgnd = function (target, intervall=1, mode = null, modifier = null, pace=1) {
-    //let i1 = document.querySelectorAll(".auth input")[0];
-    //let i2 = document.querySelectorAll(".auth input")[1];
 
     let str = target.style.backgroundColor;
     let values = str.slice(4, str.length - 1);
@@ -71,8 +69,6 @@ let animateBgnd = function (target, intervall=1, mode = null, modifier = null, p
     }
     
     target.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
-    //i1.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
-    //i2.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
 
     if (green <= 255) {
         setTimeout(
