@@ -37,24 +37,28 @@
 
     <nav class="navbar">
         <a href="#home">Home</a>
-        <a href="#news">News</a>
+        <a href="#news">Background Color
+            <input type="color" id="bckgrndColor" name="bckgrndColor" value="#FFFFFF">
+        </a>
         <div class="dropdown">
-          <button class="dropbtn">Theme</button>
+          <button class="dropbtn">Téma</button>
           <div class="dropdown-content">
             <a class="outlook themeSelect" data-value="dark" href="#">Sötét</a>
-            <a class="outlook themeSelect" data-value="medium" href="#">Medium</a>
+            <a class="outlook themeSelect" data-value="medium" href="#">Közepes</a>
             <a class="outlook themeSelect" data-value="zebra" href="#">Zebra</a>
-            <a class="outlook themeSelect" data-value="light" href="#">Light</a>
+            <a class="outlook themeSelect" data-value="light" href="#">Világos</a>
           </div>
         </div>
         <div class="dropdown">
-          <button class="dropbtn">Dropdown 
+          <button class="dropbtn">Háttérkép 
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a class="outlook backgroundPicSelect" href="#">Link 1</a>
-            <a class="outlook backgroundPicSelect" href="#">Link 2</a>
-            <a class="outlook backgroundPicSelect" href="#">Link 3</a>
+            <a class="outlook backgroundPicSelect" data-value="resources/bgnd-dark2.jpg" href="#">Sötét 1</a>
+            <a class="outlook backgroundPicSelect" data-value="resources/bgnd-dark3.jpg" href="#">Sötét 2</a>
+            <a class="outlook backgroundPicSelect" data-value="resources/bgnd-dark4.jpg" href="#">Sötét 3</a>
+            <a class="outlook backgroundPicSelect" data-value="resources/bgnd-dark5.jpg" href="#">Sötét 4</a>
+            <a class="outlook backgroundPicSelect" data-value="resources/IMG-20190406-WA0035.jpg" href="#">Tengerpart</a>
           </div>
         </div>
         <div class="input-group search">
@@ -84,7 +88,7 @@
     <script src="main.js"></script>
     <script src="initPage.js"></script>
     <script src="auth.js"></script>
-    <script src="jquery-3.4.1.min.js"></script>
+    <!-- <script src="jquery-3.4.1.min.js"></script> -->
     <script src="btn.js"></script>
     <script src="navbar.js"></script>
 </body>
