@@ -7,6 +7,6 @@ $(document).ready(function(){
 
   $(".closing-x").click(function(){
     $(".newCard").delay("slow").slideDown();
-    $".editor").slideUp();
+    $(".editor").slideUp();
   });
 });
