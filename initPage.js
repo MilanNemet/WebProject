@@ -69,9 +69,9 @@ let renderHtml = function () {
 
         divOuter.appendChild(buttonAddNewCard);
 
-        let div = document.createElement("div");
-        div.className ="editor";
-        div.style.display = "none";
+        let divEditor = document.createElement("div");
+        divEditor.className ="editor";
+        divEditor.style.display = "none";
         let inputTitle = document.createElement("input");
         inputTitle.className = "title";
         inputTitle.placeholder = "Adj címet ennek a kártyának...";
@@ -83,10 +83,10 @@ let renderHtml = function () {
         btnClose.className = "closing-x";
         btnClose.innerHTML = "X";
 
-        div.appendChild(inputTitle);
-        div.appendChild(btnNewCard);
-        div.appendChild(btnClose);
-        divOuter.appendChild(div);
+        divEditor.appendChild(inputTitle);
+        divEditor.appendChild(btnNewCard);
+        divEditor.appendChild(btnClose);
+        divOuter.appendChild(divEditor);
 
         mainDiv.appendChild(divOuter);
     }
