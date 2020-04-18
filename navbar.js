@@ -27,6 +27,8 @@ let navBar = document.getElementsByClassName("navbar");
 navBar[0].className= "navbar "+themeSelect;
 let dropdownElements = document.getElementsByClassName("outlook");
 for (let i = 0; i < dropdownElements.length; i++) {
+    // dropdownElements[i].addEventListener("mousedown", setStyleDown);
+    // dropdownElements[i].addEventListener("mousedown", setStyleDown);
     if (dropdownElements[i].className=="outlook themeSelect") {
         dropdownElements[i].addEventListener("click", themeChange)
     };
