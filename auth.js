@@ -37,14 +37,46 @@ let doAuth = function () {
         data[0].style.backgroundColor = "#F00";
         data[1].style.backgroundColor = "#F00";
 
+        animateBgnd(data[0], 5);
+        animateBgnd(data[1], 0, "lin", 1);
+    }
+}
+
+let animateBgnd = function (target, intervall=1, mode = null, modifier = null, pace=1) {
+
+    let str = target.style.backgroundColor;
+    let values = str.slice(4, str.length - 1);
+    let arr = values.split(", ");
+
+    let red = parseInt(arr[0]);
+    let green = parseInt(arr[1]);
+    let blue = parseInt(arr[2]);
+
+    let time = intervall;
+
+    green += pace;
+    blue += pace;
+
+    switch (mode) {
+        case "lin":
+            time += modifier;
+            break;
+        case "exp":
+            time *= modifier;
+            break;
+        default:
+            break;
+    }
+    
+    target.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
+
+    if (green <= 255) {
         setTimeout(
-            function () {
-                document.querySelectorAll(".auth input")[0].style.backgroundColor[2]++;
-                document.querySelectorAll(".auth input")[0].style.backgroundColor[3]++;
-                document.querySelectorAll(".auth input")[1].style.backgroundColor[2]++;
-                document.querySelectorAll(".auth input")[1].style.backgroundColor[3]++;
+            () => {
+                animateBgnd(target, time, mode, modifier);
+                console.info("T: " + time + " || r:" + red + ", g:" + green + ", b:" + blue);
             },
-            10
+            time
         );
     }
 }
