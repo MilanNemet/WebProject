@@ -70,22 +70,21 @@ let renderHtml = function () {
         divOuter.appendChild(buttonAddNewCard);
 
         let div = document.createElement("div");
-        div.id="editor";
-        /*div.style.display = "none";*/
-        let ComposerContent = document.createElement("input");
-        ComposerContent.className = "title";
+        div.className ="editor";
+        div.style.display = "none";
+        let inputTitle = document.createElement("input");
+        inputTitle.className = "title";
 
-        let newCardComposer = document.createElement("button");
-        newCardComposer.className = "cardFooter";
-        newCardComposer.innerHTML = "Új kártya";
+        let btnNewCard = document.createElement("button");
+        btnNewCard.innerHTML = "Új kártya";
 
-        let ComposerClose = document.createElement("button");
-        ComposerClose.className = "closing-x";
-        ComposerClose.innerHTML = "X";
+        let btnClose = document.createElement("button");
+        btnClose.className = "closing-x";
+        btnClose.innerHTML = "X";
 
-        div.appendChild(ComposerContent);
-        div.appendChild(newCardComposer);
-        div.appendChild(ComposerClose);
+        div.appendChild(inputTitle);
+        div.appendChild(btnNewCard);
+        div.appendChild(btnClose);
         divOuter.appendChild(div);
 
         mainDiv.appendChild(divOuter);
