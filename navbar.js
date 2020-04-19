@@ -10,21 +10,31 @@ let themeChange = (e) => {
         themeElements[0].className = classChange;
     };
     themeSelect = newTheme;
-}
+};
 
+let backgroundPictureChange = (e) => {
+    let htmlData = document.querySelector("html");
+    htmlData.style.backgroundImage = `url(${e.target.dataset.value})`;
+};
 
-
-
+let bckgrndColorChange = (e) => {
+    let htmlData = document.querySelector("html");
+    htmlData.style.backgroundImage = "none";
+    htmlData.style.backgroundColor = e.target.value;
+};
 
 let navBar = document.getElementsByClassName("navbar");
 navBar[0].className= "navbar "+themeSelect;
 let dropdownElements = document.getElementsByClassName("outlook");
-// console.log(dropdownElements);
 for (let i = 0; i < dropdownElements.length; i++) {
+    // dropdownElements[i].addEventListener("mousedown", setStyleDown);
+    // dropdownElements[i].addEventListener("mousedown", setStyleDown);
     if (dropdownElements[i].className=="outlook themeSelect") {
         dropdownElements[i].addEventListener("click", themeChange)
-    }
+    };
     if (dropdownElements[i].className=="outlook backgroundPicSelect") {
-        dropdownElements[i].addEventListener("click", () => console.log ("kép katt"+dropdownElements[i].innerHTML))
-    }
-}
+        dropdownElements[i].addEventListener("click", backgroundPictureChange)
+    };
+};
+let bckgrndColorBtn = document.getElementById("bckgrndColor");
+bckgrndColorBtn.addEventListener("input",bckgrndColorChange);

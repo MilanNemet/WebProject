@@ -21,7 +21,7 @@ let loadStart = function () {
         }
     }
 }
-let themeSelect ="light";  // for testing the theme you need to change the class only here!!
+let themeSelect ="medium";  // for testing the theme you need to change the class only here!!
 let renderHtml = function () {
     console.debug("Starting render HTML...");
 
@@ -48,7 +48,7 @@ let renderHtml = function () {
             let cardTitle = document.createElement("h5");
             let cardContent = document.createElement("p");
             cardContent.className = "content";  //Card content has class: "content"
-            cardContent.style.display = "none"; //Card content is not visible 
+            //cardContent.style.display = "none"; //Card content is not visible
             let cardDescription = document.createElement("p");
             cardDescription.className = "cardDescription";   //Card description has class: "cardDescription"
             cardDescription.style.display = "none";         //Card description is not visible
@@ -69,6 +69,25 @@ let renderHtml = function () {
         buttonAddNewCard.className = "newCard "+themeSelect;
 
         divOuter.appendChild(buttonAddNewCard);
+
+        let divEditor = document.createElement("div");
+        divEditor.className ="editor";
+        divEditor.style.display = "none";
+        let inputTitle = document.createElement("input");
+        inputTitle.className = "title";
+        inputTitle.placeholder = "Adj címet ennek a kártyának...";
+
+        let btnNewCard = document.createElement("button");
+        btnNewCard.innerHTML = "Új kártya";
+
+        let btnClose = document.createElement("button");
+        btnClose.className = "closing-x";
+        btnClose.innerHTML = "X";
+
+        divEditor.appendChild(inputTitle);
+        divEditor.appendChild(btnNewCard);
+        divEditor.appendChild(btnClose);
+        divOuter.appendChild(divEditor);
 
         mainDiv.appendChild(divOuter);
     }
