@@ -92,4 +92,3 @@ let renderHtml = function () {
         mainDiv.appendChild(divOuter);
     }
 }
-}
