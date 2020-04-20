@@ -21,7 +21,9 @@ let loadStart = function () {
         }
     }
 }
-let themeSelect ="medium";  // for testing the theme you need to change the class only here!!
+
+let themeSelect = "medium";                         // for testing the theme you need to change the class only here!!
+
 let renderHtml = function () {
     console.debug("Starting render HTML...");
 
