@@ -69,190 +69,6 @@ label {
 
 
 
-/*** color settings ***/
-
-/* zebra theme */
-.zebra {
-    background-color: teal;
-}
-
-.zebra h3 {
-    color: white;
-}
-.zebra .card:nth-child(even) {
-    background-color: #f2f2f2;
-    color: #161818;
-}
-.zebra .card:nth-child(odd) {
-    background-color: #161818;
-    color: #f2f2f2;
-}
-
-/* dark theme */
-html.dark {
-    background-color: #2A293E;
-    background-image: linear-gradient(to bottom left, #19182D, #342037, #11294D);
-    background-attachment: fixed;
-}
-.dark {
-    color: white;
-}
-.dark h3 {
-    color: #786481;
-}
-.dark h5 {
-    color: palegoldenrod;
-}
-.column.dark {
-    box-shadow: 0 0 3px 3px #786481;
-    background-color: rgba(0,0,0,0); /*transparent*/
-}
-.card.dark {
-    margin-bottom: 15px;
-    box-shadow: 0 0 2px 2px palegoldenrod;
-}
-.navbar.dark {
-    box-shadow: 0 0 3px 3px #786481;
-}
-
-/* medium theme*/
-
-.medium .card {
-    color:black;
-    text-align: center;
-    font-family: 'Patrick Hand', cursive;
-    background-color: #fce9e9;
-}
-
-.medium.column {
-    background: #f8d3d3;
-    border: 2px solid #eb7c7a;
-}
-
-.medium h3 {
-    font-family: 'Alice', serif;
-    font-size: 19px;
-    text-align: center;
-    font-weight: bolder;
-   }
-   
-.medium h5 {
-    font-family: 'Alice', serif;
-    font-size: 17px;
-   }
-.medium p {
-    font-size: 14px;
-   }
-html.medium {
-   background-image: url("resources/IMG-20190406-WA0035.jpg");
-   background-size: cover;
-   background-attachment: fixed;
- }
- 
- .medium.newCard {
-     color: black;
-     font-weight: bold;
-     font-family: 'Alice', serif;
- }
- .medium.newCard:hover {
-     background-color: #eb7c7a;
- }
-.navbar.medium {
-    background-color: rgba(246,210,211,0.6);
-    border: 2px solid  rgba(235,124,122,0.6);
-    font-family: 'Alice', serif;
-    font-size: 19px;
-    font-weight: bolder;
-
-}
-.navbar.medium a {
-    color: black;
-    text-decoration: none;
-}
-
-.navbar.medium .dropdown .dropbtn{
-    color: black;
-    font-size: 19px;
-    font-weight: bolder;
-}
-
-.navbar.medium a:hover, .navbar.medium .dropdown:hover .dropbtn {
-    background-color: #eb7c7a;
-  }
-.navbar.medium .dropdown .dropdown-content {
-    background-color: rgb(246,210,211);
-}
-.navbar.medium .dropdown .dropdown-content a {
-    color: black;
-}
-
-/* light theme */
-
-html.light {
-    background-color: #FAFAFA;
-}
-.light.column {
-    background-color: #D7E7ED;
-    box-shadow: 1px 1px 3px #888888;
-    cursor: pointer;
-} 
-.light h3 {
-    color: #6A7785;
-}
-.light h5 {
-    font-size: medium;
-    padding-top: 5px;
-}
-.light.card {
-    background-color: #FEFFFF;
-    font-family: "Baloo Thambi 2", cursive;
-    color: #6A7785;
-    box-shadow: 1px 1px 3px #888888;
-}
-.newCard.light  {
-    background: #D7E7ED;
-    text-decoration: none;
-    color: #6A7785;
-    font-family: "Baloo Thambi 2", cursive;
-    font-size: medium;
-    min-width: 300px;
-    width: 15em;
-    border: none;
-    padding: 0.9em;
-    margin: 0.27em 0 0 0;
-  }
-.newCard.light:hover  {
-    background-color: #ACB9BE;
-    color:#6A7785;
-    border-radius: 5px;
-  }
-.navbar.light {
-    background-color: #D7E7ED;
-    box-shadow: 1px 1px 3px #888888;
-    /* font-family: 'Alice', serif; */
-    font-size: 19px;
-    font-weight: bolder;
-
-}
-.navbar.light a {
-    color: #6A7785;
-    text-decoration: none;
-}
-
-.navbar.light .dropdown .dropbtn{
-    color: #6A7785;
-    font-size: 19px;
-    font-weight: bolder;
-}
-
-.navbar.light a:hover, .navbar.light .dropdown:hover .dropbtn {
-    background-color: rgb(79, 165, 196);
-    color: rgb(224, 232, 240);
-  }
-.navbar.light .dropdown .dropdown-content {
-    background-color: #D7E7ED;
-}
-
 /* Navbar */
 .navbar {
     /*overflow: hidden;*/
@@ -292,16 +108,13 @@ html.light {
 .dropdown-content {
     display: none;
     position: absolute;
-    /* background-color: #f9f9f9; */
     min-width: 160px;
-    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
     box-shadow: 10px 10px 10px rgba(0,0,0,0.7);
     z-index: 1;
 }
   
   .dropdown-content a {
     float: none;
-    /* color: black; */
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -315,6 +128,7 @@ html.light {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  
  /* Button */
 
  .newCard  {

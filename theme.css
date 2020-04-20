@@ -1,0 +1,379 @@
+/* dark theme */
+
+.dark { 
+    color : white;
+}
+html.dark { 
+    background-image : linear-gradient(to bottom left, #19182D, #342037, #11294D);
+    background-size : ;
+    background-attachment : fixed;
+    background-color : #2A293E;
+}       
+.dark.column { 
+    background-color : rgba(0,0,0,0);
+    border : ;
+    box-shadow : 0 0 3px 3px #786481;
+    cursor : ;
+}
+.dark h3 { 
+    font-family : ;
+    font-size : ;
+    text-align : ;
+    font-weight : ;
+    color : #786481;
+}
+.dark.card { 
+    color : ;
+    text-align : ;
+    font-family : ;
+    background-color : ;
+    margin-bottom : 15px;
+    box-shadow : 0 0 2px 2px palegoldenrod;
+}
+.dark h5 { 
+    font-family : ;
+    font-size : ;
+    color : palegoldenrod;
+    padding-top : ;
+}
+.dark .card:nth-child(even) { 
+    background-color : ;
+    color : ;
+}
+.dark .card:nth-child(odd) { 
+    background-color : ;
+    color : ;
+}
+.dark p { 
+    font-size : ;
+}
+.dark.newCard { 
+    color : ;
+    font-weight : ;
+    font-family : ;
+    background : ;
+    text-decoration : ;
+    font-size : ;
+    min-width : ;
+    width : ;
+    border : ;
+    padding : ;
+    margin : ;
+}
+.dark.newCard:hover { 
+    background-color : ;
+    color : ;
+    border-radius : ;
+}
+.navbar.dark { 
+    background-color : ;
+    border : ;
+    font-family : ;
+    font-size : ;
+    font-weight : ;
+    box-shadow : 0 0 3px 3px #786481;
+}
+.navbar.dark a { 
+    color : ;
+    text-decoration : ;
+}
+.navbar.dark .dropdown .dropbtn { 
+    color : ;
+    font-size : ;
+    font-weight : ;
+}
+.navbar.dark a:hover, .navbar.dark .dropdown:hover .dropbtn { 
+    background-color : ;
+    color : ;
+}
+.navbar.dark .dropdown .dropdown-content { 
+    background-color : ;
+}
+.navbar.dark .dropdown .dropdown-content a { 
+    color : ;
+}
+
+/* light theme */
+
+.light { 
+    color : ;
+}
+html.light { 
+    background-image : ;
+    background-size : ;
+    background-attachment : ;
+    background-color : #FAFAFA;
+}
+.light.column { 
+    background-color : #D7E7ED;
+    border : ;
+    box-shadow : 1px 1px 3px #888888;
+    cursor : pointer;
+}
+.light h3 { 
+    font-family : ;
+    font-size : ;
+    text-align : ;
+    font-weight : ;
+    color : #6A7785;
+}
+.light.card { 
+    color : #6A7785;
+    text-align : ;
+    font-family : "Baloo Thambi 2", cursive;
+    background-color : #FEFFFF;
+    margin-bottom : ;
+    box-shadow : 1px 1px 3px #888888;
+}
+.light h5 { 
+    font-family : ;
+    font-size : medium;
+    color : ;
+    padding-top : 5px;
+}
+.light .card:nth-child(even) { 
+    background-color : ;
+    color : ;
+}
+.light .card:nth-child(odd) { 
+    background-color : ;
+    color : ;
+}
+.light p { 
+    font-size : ;
+}
+.light.newCard { 
+    color : #6A7785;
+    font-weight : ;
+    font-family : "Baloo Thambi 2", cursive;
+    background : #D7E7ED;
+    text-decoration : none;
+    font-size : medium;
+    min-width : 300px;
+    width : 15em;
+    border : none;
+    padding : 0.9em;
+    margin : 0.27em 0 0 0;
+}
+.light.newCard:hover { 
+    background-color : #ACB9BE;
+    color : #6A7785;
+    border-radius : 5px;
+}
+.navbar.light { 
+    background-color : #D7E7ED;
+    border : ;
+    font-family : ;
+    font-size : 19px;
+    font-weight : bolder;
+    box-shadow : 1px 1px 3px #888888;
+}
+.navbar.light a { 
+    color : #6A7785;
+    text-decoration : none;
+}
+.navbar.light .dropdown .dropbtn { 
+    color : #6A7785;
+    font-size : 19px;
+    font-weight : bolder;
+}
+.navbar.light a:hover, .navbar.light .dropdown:hover .dropbtn { 
+    background-color : rgb(79, 165, 196);
+    color : rgb(224, 232, 240);
+}
+.navbar.light .dropdown .dropdown-content { 
+    background-color : #D7E7ED;
+}
+.navbar.light .dropdown .dropdown-content a { 
+    color : ;
+}
+
+/* medium theme */
+
+.medium { 
+    color : ;
+}
+html.medium { 
+    background-image : url("resources/IMG-20190406-WA0035.jpg");
+    background-size : cover;
+    background-attachment : fixed;
+    background-color : ;
+}
+.medium.column { 
+    background-color : #f8d3d3;
+    border : 2px solid #eb7c7a;
+    box-shadow : ;
+    cursor : ;
+}
+.medium h3 { 
+    font-family : 'Alice', serif;
+    font-size : 19px;
+    text-align : center;
+    font-weight : bolder;
+    color : ;
+}
+.medium.card { 
+    color : black;
+    text-align : center;
+    font-family : 'Patrick Hand', cursive;
+    background-color : #fce9e9;
+    margin-bottom : ;
+    box-shadow : ;
+}
+.medium h5 { 
+    font-family : 'Alice', serif;
+    font-size : 17px;
+    color : ;
+    padding-top : ;
+}
+.medium .card:nth-child(even) { 
+    background-color : ;
+    color : ;
+}
+.medium .card:nth-child(odd) { 
+    background-color : ;
+    color : ;
+}
+.medium p { 
+    font-size : 14px;
+}
+.medium.newCard { 
+    color : black;
+    font-weight : bold;
+    font-family : 'Alice', serif;
+    background : ;
+    text-decoration : ;
+    font-size : ;
+    min-width : ;
+    width : ;
+    border : ;
+    padding : ;
+    margin : ;
+}
+.medium.newCard:hover { 
+    background-color : #eb7c7a;
+    color : ;
+    border-radius : ;
+}
+.navbar.medium { 
+    background-color : rgba(246,210,211,0.6);
+    border : 2px solid rgba(235,124,122,0.6);
+    font-family : 'Alice', serif;
+    font-size : 19px;
+    font-weight : bolder;
+    box-shadow : ;
+}
+.navbar.medium a { 
+    color : black;
+    text-decoration : none;
+}
+.navbar.medium .dropdown .dropbtn { 
+    color : black;
+    font-size : 19px;
+    font-weight : bolder;
+}
+.navbar.medium a:hover, .navbar.medium .dropdown:hover .dropbtn { 
+    background-color : #eb7c7a;
+    color : ;
+}
+.navbar.medium .dropdown .dropdown-content { 
+    background-color : rgb(246,210,211);
+}
+.navbar.medium .dropdown .dropdown-content a { 
+    color : black;
+}
+
+/* Zebra theme */
+
+.zebra { 
+    color : ;
+}
+html.zebra { 
+    background-image : ;
+    background-size : ;
+    background-attachment : ;
+    background-color : teal;
+}
+.zebra.column { 
+    background-color : rgba(0,0,0,0);
+    border : ;
+    box-shadow : 0 0 3px 3px #786481;
+    cursor : ;
+}
+.zebra h3 { 
+    font-family : ;
+    font-size : ;
+    text-align : ;
+    font-weight : ;
+    color : white;
+}
+.zebra.card { 
+    color : ;
+    text-align : ;
+    font-family : ;
+    background-color : ;
+    margin-bottom : ;
+    box-shadow : ;
+}
+.zebra h5 { 
+    font-family : ;
+    font-size : ;
+    color : ;
+    padding-top : ;
+}
+.zebra .card:nth-child(even) { 
+    background-color : #f2f2f2;
+    color : #161818;
+}
+.zebra .card:nth-child(odd) { 
+    background-color : #161818;
+    color : #f2f2f2;
+}
+.zebra p { 
+    font-size : ;
+}
+.zebra.newCard { 
+    color : ;
+    font-weight : ;
+    font-family : ;
+    background : ;
+    text-decoration : ;
+    font-size : ;
+    min-width : ;
+    width : ;
+    border : ;
+    padding : ;
+    margin : ;
+}
+.zebra.newCard:hover { 
+    background-color : ;
+    color : ;
+    border-radius : ;
+}
+.navbar.zebra { 
+    background-color : ;
+    border : ;
+    font-family : ;
+    font-size : ;
+    font-weight : ;
+    box-shadow : ;
+}
+.navbar.zebra a { 
+    color : ;
+    text-decoration : ;
+}
+.navbar.zebra .dropdown .dropbtn { 
+    color : ;
+    font-size : ;
+    font-weight : ;
+}
+.navbar.zebra a:hover, .navbar.zebra .dropdown:hover .dropbtn { 
+    background-color : ;
+    color : ;
+}
+.navbar.zebra .dropdown .dropdown-content { 
+    background-color : ;
+}
+.navbar.zebra .dropdown .dropdown-content a { 
+    color : ;
+}
