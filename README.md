@@ -14,3 +14,6 @@ common website project
 	* image library
 	* themes
 * Only card title is visible on main page, on click it opens a "modal" contains the other info
+* Favicon
+	* for desktop browser
+	* additional resolutions for other devices

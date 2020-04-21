@@ -21,19 +21,22 @@ let loadStart = function () {
         }
     }
 }
+
+let themeSelect = "medium";                         // for testing the theme you need to change the class only here!!
+
 let renderHtml = function () {
     console.debug("Starting render HTML...");
 
-    document.querySelector("html").className = "light";     //for testing: add your .className here (related to the entire document)
+    document.querySelector("html").className = themeSelect;
 
     let mainDiv = document.querySelector(".container");
-    mainDiv.className = "container light";
+    mainDiv.className = "container "+themeSelect;
     let newDivCol = [];
     let newDivPost = [];
 
     for (var i = 0; i < columns.length; i++) {
         let divOuter = document.createElement("div");
-        divOuter.className = "column light";    //for testing: add your .className here (related to .column)
+        divOuter.className = "column "+themeSelect;
 
         let colTitle = document.createElement("h3");
         colTitle.innerHTML = columns[i].title.toUpperCase();
@@ -42,12 +45,12 @@ let renderHtml = function () {
 
         for (var j = 0; j < columns[i].postIts.length; j++) {
             let divInner = document.createElement("div");
-            divInner.className = "card light";    //for testing: add your .className here (related to .card)
+            divInner.className = "card "+themeSelect;
 
             let cardTitle = document.createElement("h5");
             let cardContent = document.createElement("p");
             cardContent.className = "content";  //Card content has class: "content"
-            //cardContent.style.display = "none"; //Card content is not visible 
+            //cardContent.style.display = "none"; //Card content is not visible
             let cardDescription = document.createElement("p");
             cardDescription.className = "cardDescription";   //Card description has class: "cardDescription"
             cardDescription.style.display = "none";         //Card description is not visible
@@ -65,7 +68,7 @@ let renderHtml = function () {
 
         let buttonAddNewCard = document.createElement("button");
         buttonAddNewCard.innerHTML = "&uacute;j post-it";              /* for testing: text in the button, appearing on frontend */
-        buttonAddNewCard.className = "newCard light";                        /* for testing: class(es) of this button */
+        buttonAddNewCard.className = "newCard "+themeSelect;
 
         divOuter.appendChild(buttonAddNewCard);
 
