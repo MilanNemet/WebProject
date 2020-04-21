@@ -94,3 +94,12 @@ let renderHtml = function () {
         mainDiv.appendChild(divOuter);
     }
 }
+
+let handleUnload = function () {
+    var s = "You have unsaved changes. Really leave?";
+    event = event || window.event;
+    if (event) {
+        event.returnValue = s; // This is for IE
+    }
+    return s; // This is for all other browsers
+}

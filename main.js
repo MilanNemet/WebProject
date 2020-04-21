@@ -17,11 +17,13 @@ function column (title){
 
 let columns = [];
 
+let ownUrl = window.location.href;
 
 window.onload = function () {
     console.debug("Window loaded...");
 
     //document.querySelector("#login").addEventListener("click", doAuth);
+    window.addEventListener("beforeunload", handleUnload);
     loadStart();
     renderHtml();
 }
