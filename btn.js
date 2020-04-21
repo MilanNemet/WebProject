@@ -1,4 +1,5 @@
-$(document).ready(function(){
+$( window ).on( "load", function(){
+  console.log("window loaded");
 
   $(".newCard").click(function () {
       $(".editor").hide();
