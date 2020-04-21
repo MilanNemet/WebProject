@@ -80,6 +80,7 @@ let renderHtml = function () {
         inputTitle.placeholder = "Adj címet ennek a kártyának...";
 
         let btnNewCard = document.createElement("button");
+        btnNewCard.className = "btn-card";
         btnNewCard.innerHTML = "Új kártya";
 
         let btnClose = document.createElement("button");
